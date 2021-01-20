@@ -94,7 +94,7 @@ Since we want to start with scripts.start:prod, we'll create our own Procfile ra
 ```
 web: npm run start:prod
 ```
-## Exceeds
+## Links
 
 * [Source link](https://github.com/sudheera96/sc-nest-api)
 * [App link](https://sc-nest-api.herokuapp.com/)
