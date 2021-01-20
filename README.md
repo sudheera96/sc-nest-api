@@ -1,73 +1,88 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# sc-nest-api
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Nest.js
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Nest is a opinionated node.js framework used to build server side applications. Based on Express.js NestJS takes the advantage of both typescript and javascript. 
 
-## Description
+## Nest properties
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+* Extensibility: Flexibility to use other libraries
+* Versatility: Adaptive ecosystem that is fully-fledged for all types of server-side applications.
+* Progressiveness: Brings JavaScript features and design patterns into the Node community.
 
-## Installation
+## Reasons for Nest.js preferable over other NodeJS frameworks
 
-```bash
-$ npm install
+* Compatibility with TypeScript
+* Support Monorepo
+* Made for monoliths and microservices
+* DevOps support ready
+* Powerful CLI
+* Built-in support for microservices & transport layers
+* Dependency injection container
+* Easy database interaction
+* Building GraphQL interfaces easily
+* Framework adaptive nature
+* Domain-driven development
+* Angular based folder structure
+* Built-in Exception Filter
+* Use of third-party modules
+* Built-in inversion of control
+## Install Nest CLI globally
 ```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+npm i -g @nestjs/cli
 ```
+The above command used to install the Nest CLI and set up a new project 
 
-## Test
+## Create New Nest project
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+1. From in your git projects folder, run (use your initials):
 ```
+nest new name-nest-api
+```
+2. cd into your new project directory
+```
+npm run start
+```
+3. View at http://localhost:3000/ (Links to an external site.)
 
-## Support
+### FAQ's 
+#### What does npm install do?
+npm install downloads a package and it's dependencies
+#### What file describes the start script? 
+package.json
+#### What is the actual command that npm start runs? 
+```
+npm start run
+```
+#### Are there other scripts provided?
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+#### What language are .ts files? How close are they to .js files? What is special about TypeScript?  Why do so many programmers like TS over JS? (Hint: When do more errors get identified?)
+* .ts stands for typescript files. 
+* TypesScript is known as Object oriented programming language whereas JavaScript is a scripting language.
+* TS identifies more errors than JS thats why programmers like TS. Because as the project grows the program also grows so TS helps to identify errors.
 
-## Stay in touch
+## Customize the app
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+* Open the folder in VS Code. Explore the code.
+* Figure out how to change the message to read 'Hello World from ___ !' (display your name) - 
+* Test it. 
+* Prepare for Heroku: package.json needs engines / start script, app needs a flexible PORT - In package.json, add (type, don't copy) "engines": { "node": "15.x" } - it require for heroku to have latest version of node. Give flexible PORT as process.env.PORT || 3000
 
-## License
+## Create repo & initial push
 
-Nest is [MIT licensed](LICENSE).
+* In your GitHub account, create a repo with the exact same name as your project folder. Add a description. Keep it empty.
+* In your laptop root repo folder (customize): 
+* git remote add origin https://github.com/sudheera96/sc-nest-api.git
+* Configure Heroku to use your GitHub and auto publish on push.
+* git add .
+* git commit -m "Initial commit"
+* git push origin master
+
+## Publish to Heroku
+
+Publish your app to Heroku. If running out of free apps, delete earlier ones. 
+* Login to Heroku (use same email as you use for GitHub)
+* Create a new app (I use the same name as my repo if the name not taken already, orelse use other name)
+* Deploy / Deployment method = GitHub (and connect to your repo)
+* Deploy / Enable Automatic Deploys.
+* Settings / Get the app URL
