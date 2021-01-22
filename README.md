@@ -68,6 +68,24 @@ npm start run
 * Test it. 
 * Prepare for Heroku: package.json needs engines / start script, app needs a flexible PORT - In package.json, add (type, don't copy) "engines": { "node": "15.x" } - it require for heroku to have latest version of node. Give flexible PORT as process.env.PORT || 3000
 
+## Generate a new Resource
+* From in your project directory, run (note - I use singular rather than their example plural - do as you please and adjust accordingly):
+```
+nest generate resource quest  
+```
+* Select REST (hit return) and Y (generate entry pts). 
+* Explore the project structure. How does our new resource get added to the app? 
+For each new resource, there's a module with a controller that handles requests by calling a service. (We've seen these before.) 
+* There's also an interface - and a dto - a data transfer object. When you call a POST (or PUT) command, you need to provide a package with your request.  That's wrapped up nicely in a read-only 'data transfer object' - one for each unique package needed. 
+
+```
+npm i --save @nestjs/mapped-types
+```
+## Finish and Test
+
+* Complete the quest API.
+* Test it: npm run test
+
 ## Create repo & initial push
 
 * In your GitHub account, create a repo with the exact same name as your project folder. Add a description. Keep it empty.
