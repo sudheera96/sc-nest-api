@@ -76,7 +76,9 @@ npm start run
 * Configure Heroku to use your GitHub and auto publish on push.
 * git add .
 * git commit -m "Initial commit"
-* git push origin master
+* git push origin main*
+
+*The default branch used to be "master" - I think it is now "main". Please use the default branch on your system - use TortoiseGit / Show Log. Share your screen during class if you run into issues.  
 
 ## Publish to Heroku
 
@@ -86,3 +88,19 @@ Publish your app to Heroku. If running out of free apps, delete earlier ones.
 * Deploy / Deployment method = GitHub (and connect to your repo)
 * Deploy / Enable Automatic Deploys.
 * Settings / Get the app URL
+
+## Important points
+Since we want to start with scripts.start:prod, we'll create our own Procfile rather than use the default. Create a new Profile (note the capitalization - as developers, we must be pedantic!) with this inside
+```
+web: npm run start:prod
+```
+## Links
+
+* [Source link](https://github.com/sudheera96/sc-nest-api)
+* [App link](https://sc-nest-api.herokuapp.com/)
+* [App link - about](https://sc-nest-api.herokuapp.com/about)
+
+## Reference
+* [First steps of nest](https://docs.nestjs.com/first-steps)
+* [MVC](https://docs.nestjs.com/techniques/mvc#model-view-controller)
+* [NestJs over other frameworks](https://medium.com/habilelabs/why-choose-nest-js-over-other-node-frameworks-68a13fa1e2c8)
