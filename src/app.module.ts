@@ -5,6 +5,8 @@ import { QuestModule } from './quest/quest.module';
 import { UserModule } from './user/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './user/entities/user.entity';
+import { Location } from './location/entities/location.entity';
+
 import { LocationModule } from './location/location.module';
 
 @Module({
